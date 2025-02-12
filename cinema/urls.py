@@ -13,8 +13,8 @@ router = routers.DefaultRouter()
 router.register("movies", MovieViewSet)
 router.register("actors", ActorViewSet)
 router.register("genres", GenreViewSet)
-router.register("cinema_hall", CinemaHallViewSet)
-router.register("movie_session", MovieSessionViewSet)
+router.register("cinema_halls", CinemaHallViewSet)
+router.register("movie_sessions", MovieSessionViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),
